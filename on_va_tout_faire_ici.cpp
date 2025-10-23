@@ -3,10 +3,12 @@
 
 #include "on_va_tout_faire_ici.h"
 
-using namespace std;
+#include "common/test_réarrangement.h"
 
 int main()
 {
-	cout << "Hello CMake." << endl;
+	std::cout << "Hello CMake." << std::endl;
+	std::cout << "parse_decimal tests:"
+		<< common::parse_decimal("123.456").value() << std::endl;
 	return 0;
 }

@@ -12,10 +12,10 @@ endif()
 project ("on_va_tout_faire_ici")
 
 # Ajoutez une source à l'exécutable de ce projet.
-add_executable (on_va_tout_faire_ici "on_va_tout_faire_ici.cpp" "on_va_tout_faire_ici.h")
+add_executable (on_va_tout_faire_ici "on_va_tout_faire_ici.cpp" "on_va_tout_faire_ici.h" "common/test_réarrangement.cpp" "common/test_réarrangement.h")
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
-  set_property(TARGET on_va_tout_faire_ici PROPERTY CXX_STANDARD 20)
+  set_property(TARGET on_va_tout_faire_ici PROPERTY CXX_STANDARD 23)
 endif()
 
 # TODO: Ajoutez des tests et installez des cibles si nécessaire.
